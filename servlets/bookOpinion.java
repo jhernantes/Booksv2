@@ -12,6 +12,7 @@ public class bookOpinion extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         try {
+            int a=3;
             Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
             String url="jdbc:odbc:books";
             connection=DriverManager.getConnection(url); 
